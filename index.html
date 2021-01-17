@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/0ac62e933e.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+  <!-- My CSS Sheets -->
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  <link rel="stylesheet" type="text/css" href="./styles/skill.css">
+
+
+  <title>Arindam Biswas</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="navBar" id="navBarID">
+      <a class="closeMenu" onclick="closeNav()" id="navClose"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+      <div class="navItem">
+        <a href="#">
+          <p><i class="fas fa-home"></i>Home</p>
+        </a>
+      </div>
+      <div class="navItem">
+        <a href="#AboutMe">
+          <p><i class="fa fa-user" aria-hidden="true"></i>About</p>
+        </a>
+      </div>
+      <div class="navItem">
+        <a href="#Skills">
+          <p><i class="fa fa-list" aria-hidden="true"></i>Skill</p>
+        </a>
+      </div>
+      <div class="navItem">
+        <a href="#Projects">
+          <p><i class="fa fa-folder" aria-hidden="true"></i>Projects</p>
+        </a>
+      </div>
+      <div class="navItem">
+        <a href="#Contact">
+          <p><i class="fa fa-envelope-open" aria-hidden="true"></i>Contact</p>
+        </a>
+      </div>
+    </div>
+    <a class="menu" onclick="openNav()" id="navTrigger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <div class="mainBodyDiv">
+
+      <div class="avaterNameDiv">
+        <div class="avaterDiv"></div>
+        <p class="name">Arindam Biswas</p>
+        <p class="smallDescription">I'm a <span id="smallDescriptionSpan"></span></p>
+
+        <ul class="iconList">
+          <li class="iconItem">
+            <a href="https://www.linkedin.com/in/arindam-biswas-164b171b6" target="_blank" class="iconLink"
+              id="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="iconItem" id="instagram">
+            <a href="https://www.instagram.com/this_is_arindam_biswas/" target="_blank" class="iconLink"
+              id="instagram"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="iconItem" id="facebook">
+            <a href="https://github.com/ArindamBiswas-dev" target="_blank" class="iconLink" id="github"><i
+                class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li class="iconItem" id="mail">
+            <a href="mailto:arindambiswas616@gmail.com" class="iconLink" id="mail"><i class="far fa-envelope"></i></a>
+          </li>
+        </ul>
+        <a href="#AboutMe" style="display: 'block';" id="hideA">
+          <div class="scroll-down"></div>
+        </a>
+      </div>
+
+      <div class="about" id="AboutMe">
+        <p class="name">About Me</p>
+        <div class="container-fluid py-4 px-0 ">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="avaterDiv"></div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 mr-md-2 aboutMeDes">
+              <p>
+                <span>
+                  This is Arindam Biswas. Currently I am pursuing B.Tech in
+                  Computer Science Engineering from Brainware University.
+                </span><br>
+                <span>
+                  Developing web applications is my main area if interest.
+                  I have built several web applications using HTML, CSS, JS and
+                  React JS in frotend and Node JS, Express JS and
+                  MongoDB in backend (MERN).
+                </span><br>
+                <span>
+                  Along with these dev. skills i have good grasp in Data Structure
+                  and Algorithms and fundamental computer science subjects.
+                  I continue to particaipate in various coding
+                  challenges on HackerRank and LeetCode and have earned several
+                  badges on these platform.
+                </span>
+              </p>
+              <div style="width: 150px"><a href="./assets/Arindam_Biswas Resume.pdf" target="_blank">
+                  <div class="cvDev">Download CV</div>
+                </a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skill" id="Skills">
+        <p class="name">Skills</p>
+        <div class="container-fluid py-4 px-0 mx-0 row justify-content-between align-items-center">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 skillDiv">
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>HTML</p>
+                <p>100%</p>
+              </div>
+              <div class="loader">
+                <div class="htmlLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>CSS</p>
+                <p>70%</p>
+              </div>
+              <div class="loader">
+                <div class="cssLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>JavaScript</p>
+                <p>70%</p>
+              </div>
+              <div class="loader">
+                <div class="javascriptLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>React JS</p>
+                <p>60%</p>
+              </div>
+              <div class="loader">
+                <div class="reactJSLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>Node JS</p>
+                <p>70%</p>
+              </div>
+              <div class="loader">
+                <div class="nodeLoader"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5  skillDiv">
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>Java</p>
+                <p>80%</p>
+              </div>
+              <div class="loader">
+                <div class="javaLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>C</p>
+                <p>70%</p>
+              </div>
+              <div class="loader">
+                <div class="cLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>MongoDB</p>
+                <p>40%</p>
+              </div>
+              <div class="loader">
+                <div class="mongoDBLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>SQL</p>
+                <p>80%</p>
+              </div>
+              <div class="loader">
+                <div class="sqlLoader"></div>
+              </div>
+            </div>
+            <div class="htmlContainer">
+              <div class="skillHeader">
+                <p>Material UI</p>
+                <p>70%</p>
+              </div>
+              <div class="loader">
+                <div class="muiLoader"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects" id="Projects">
+        <p class="name">Projects</p>
+        <div class="container-fluid px-0 py-4">
+          <div class=" projectContainer">
+            <div class="projectDiv">
+              <img src="./assets/portfolio.jpg" class="projectImg">
+              <p class="projectHeading">Portfolio</p>
+              <div class="projectDescContainer">
+                <p class="projectDesc">
+                  This is my portfolio web project.
+                  I have built this project using HTML, CSS, JavaScript and Bootstrap.
+                  And implemented Numorphic Design or Soft UI.
+                </p>
+              </div>
+              <div><a href="#">
+                  <div class="viewDetailsProject">View Details</div>
+                </a></div>
+            </div>
+            <div class="projectDiv">
+              <img src="./assets/freecourse.jpg" class="projectImg">
+              <p class="projectHeading">Free Course Yard</p>
+              <div class="projectDescContainer">
+                <p class="projectDesc">
+                  This is a web application where people get to know about free courses
+                  from all across the intenet. Built using React JS and Material UI, Node, Express and MongoDB.
+                </p>
+              </div>
+              <div><a href="#">
+                  <div class="viewDetailsProject">View Details</div>
+                </a></div>
+            </div>
+            <div class="projectDiv">
+              <img src="https://picsum.photos/200" class="projectImg">
+              <p class="projectHeading">Up Coming</p>
+              <div class="projectDescContainer">
+                <p class="projectDesc">
+                  oqwdhq wqiodohq qcoioiqh aohoq caoaioih.fhei adih odjas.
+                  oqwdhq wqiodohq qcoioiqh aohoq caoaioih.fhei adih odjas.
+                </p>
+              </div>
+              <div><a href="#">
+                  <div class="viewDetailsProject">View Details</div>
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="contact" id="Contact">
+            <p class="name">Contact Me</p>
+            <div class="row">
+            <div class="container-fluid px-0 py-4 col-sm-12 col-md-10 d-flex">
+                <form autocomplete="off">
+                  <input type="text" name="firstName" placeholder="Full Name" class="inputField" id="n1">
+                  <input type="email" name="email" placeholder="Email" class="inputField" id="e1">
+                  <input type="text" name="subject" placeholder="Subject" class="inputField" id="s1">
+                  <textarea name="message" placeholder="Message" rows="5" cols="50" class="inputField" id="t1"></textarea>
+                  <div style="width: 150px; margin-left: 10px"><a href="#"><div class="cvDev">Send</div></a></div>
+                </form>
+              </div>
+              <div class="col-sm-12 col-md-2"></div>
+            </div>
+          </div> -->
+
+      <div id="Contact" class="contact">
+        <p class="name">Contact Me</p>
+        <div class="container-fluid px-0 py-4">
+          <div class="contactContainer">
+            <form method="POST" autocomplete="off" id="formsss" class="form">
+              <div class="flexContactContainer">
+                <div class="inputBox">
+                  <input type="text" name="firstName" placeholder="Full Name" class="inputField" id="n1">
+                  <small class="smallText">Invalid Input</small>
+                </div>
+                <div class="inputBox">
+                  <input type="email" name="email" placeholder="Email" class="inputField" id="e1">
+                  <small class="smallText">Invalid Input</small>
+                </div>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="subject" placeholder="Subject" class="inputField" id="s1">
+                <small class="smallText">Invalid Input</small>
+              </div>
+              <div class="inputBox">
+                <textarea name="message" placeholder="Message" rows="5" cols="50" class="inputField" id="t1"></textarea>
+                <small class="smallText">Invalid Input</small>
+              </div>
+              <div style="width: 150px;"><button type="submit" class="cvDev">Send</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- FireBase CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+  <!-- My JavaScript files-->
+  <script type="text/javascript" src="./js/main.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

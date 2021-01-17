@@ -1,0 +1,544 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #c2c2c2;
+}
+
+.navBar{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	background-color: #c2c2c2;
+	border-right: 2px solid #B1B7B1;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	justify-content: center;
+}
+
+.navItem{
+	padding: 5px 40px;
+	font-size: 18px;
+	font-family: 'Fredoka One', cursive;
+}
+
+.navItem a{
+	text-decoration: none;
+	color: black;
+	transition: 0.1s;
+}
+
+.navItem a:hover{
+	color: #FF3D00;
+}
+
+.navItem i{
+	margin-right: 15px;
+}
+
+.mainBodyDiv{
+	margin-left: 300px;
+}
+
+.menu{
+	display: none;
+}
+
+/* .navContainer{
+	position: relative;
+} */
+
+.closeMenu{
+	display: none;
+}
+
+.closeMenu a{
+	cursor: pointer;
+}
+
+.closeMenu a:hover{
+	color: black;
+}
+
+.closeMenu i{
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.avaterNameDiv{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 10vh;
+	height: 100vh;
+	position: relative;
+}
+
+.avaterDiv{
+	height: 130px;
+	width: 130px;
+	padding: 2px;
+	background: #e0e0e0;
+	background-image: url(../assets/mypic.jpg);
+	background-size: cover;
+	border-radius: 150px;
+	box-shadow:  5px 5px 10px #7e7e7e,
+             -5px -5px 10px #ffffff;
+ }
+
+ .name{
+ 	font-size: 25px;
+ 	margin-top: 5px;
+ 	margin-bottom: 5px;
+ 	font-family: 'Fredoka One', cursive;
+ }
+
+ .smallDescription{
+ 	font-size: 	15px;
+ 	font-family: 'Ubuntu', sans-serif;
+ }
+
+ #smallDescriptionSpan:after{
+	content:"Web Developer";
+ 	animation: spin 10s linear infinite;
+ }
+
+ @keyframes spin {
+	0% {content:"Web Developer";}
+	30% {content:"Web Designer";}
+	60% {content:"Lifelong Learner";}
+}
+
+
+.iconList{
+	padding: 0;
+	margin-top: 20px;
+	display: flex;
+	width: 300px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.iconItem{
+	list-style: none;
+}
+
+.iconLink{
+	display: flex;
+	font-size: 15px;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #c2c2c2;
+	box-shadow: 
+				5px 5px 10px #7e7e7e,
+				-5px -5px 10px #ffffff;
+
+}
+
+.iconLink i{
+	margin: auto;
+}
+
+.iconLink:hover{
+		box-shadow: 
+				inset 5px 5px 10px #7e7e7e,
+				inset -5px -5px 10px #ffffff;
+}
+
+ ul li #github{
+ 	font-weight: bold;
+    color: black;
+ }
+
+ ul li #linkedin{
+ 	font-weight: bold;
+    color: #0077B5;
+ }
+
+ ul li #instagram{
+ 	font-weight: bold;
+    color: #FF5722;
+ }
+
+ ul li #mail{
+ 	font-weight: bold;
+    color: #C71610;
+ }
+
+ .scroll-down {
+  height: 40px;
+  width: 25px;
+  border: 2px solid black;
+  position: absolute;
+  left: 49%;
+  bottom: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+/*about me*/
+.about, .skill, .projects, .contact{
+	padding: 30px 50px;
+}
+
+.aboutMeDes{
+	border-radius: 19px;
+	background: #c2c2c2;
+	box-shadow:  6px 6px 14px #656565,
+             -6px -6px 14px #ffffff;
+    padding: 15px 15px;
+    font-size: 	16px;
+ 	font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutMeDes p{
+	text-align: justify;
+}
+
+.aboutMeDes a{
+	text-decoration: none;
+	color: white;
+}
+
+.cvDev{
+	border-radius: 25px;
+	background-color: #FF3D00;
+	width: 150px;
+	padding: 10px 10px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	outline: none;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.cvDev:focus{
+	outline: none;
+}
+
+
+.projectContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.projectDiv{
+	max-width: 30%;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 16px;
+	background: #c2c2c2;
+	box-shadow:  6px 6px 10px #4c4c4c,
+             -6px -6px 10px #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.projectDiv:hover{
+	box-shadow:  inset 6px 6px 10px #4c4c4c,
+            inset -6px -6px 10px #ffffff;
+}
+
+.projectImg{
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.projectHeading{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.projectDescContainer{
+	height: 120px;
+}
+
+.projectDesc{
+	text-align: justify;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.viewDetailsProject{
+	width: 130px;
+	/*height: 30px;*/
+	padding: 8px 10px;
+	text-align: center;
+	border-radius: 30px;
+	text-align: center;
+	background: #c2c2c2;
+	box-shadow:  4px 4px 4px #9f9f9f,
+             -4px -4px 4px #dbdbdb;
+    position: relative;
+    margin: auto;
+}
+
+.viewDetailsProject:hover{
+	box-shadow:  inset 4px 4px 4px #9f9f9f,
+            inset -4px -4px 4px #dbdbdb;
+}
+
+.projectDiv a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	transition: .8s;
+}
+
+
+/* .contactDiv{
+
+} */
+
+.contactContainer{
+	border-radius: 19px;
+	background: #c2c2c2;
+	box-shadow:  6px 6px 14px #656565,
+             -6px -6px 14px #ffffff;
+    padding: 20px 20px;
+    font-size: 	16px;
+ 	font-family: 'Ubuntu', sans-serif;
+
+ 	max-width: 600px;
+}
+
+.flexContactContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.inputField{
+	outline: none;
+	border: none;
+	margin: 5px 0px;
+	padding: 10px 15px;
+	border-radius: 25px;
+	font-size: 18px;
+	background: #bdbdbd;
+	box-shadow:  5px 5px 7px #a1a1a1,
+             -5px -5px 7px #d9d9d9;
+}
+
+.inputField:focus{
+	box-shadow:  inset 5px 5px 7px #a1a1a1,
+            inset -5px -5px 7px #d9d9d9;
+
+}
+
+/*.inputBox #e1, #n1{
+	width: 100%;
+	max-width: 100%;
+}
+*/
+.smallText{
+	margin-left: 20px;
+	color: red;
+	opacity: 0;
+	/*visibility: hidden;*/
+}
+
+#n1, #e1{
+	display: block;
+	width: 100%;
+}
+
+#s1, #t1{
+	width: 100%;
+}
+
+.contact a{
+	text-decoration: none;
+	color: white;
+}
+/*.navBar{
+  	display: none;
+  }*/
+.mainBodyDiv{
+	margin-left: 300;
+}
+@media screen and (max-width: 992px) {
+.navBar{
+	display: none;
+}
+
+.mainBodyDiv{
+	margin-left: 0;
+	padding: 0px 20px;
+}
+
+.avaterDiv{
+	/*margin: auto;*/
+	margin-bottom: 20px;
+}
+
+#n1, #e1{
+	display: block;
+	width: 96%;
+}
+
+.about .avaterDiv{
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.skillDiv{
+	margin: 10px 0px;
+}
+
+.about, .skill, .projects, .contact{
+padding: 0px;
+}
+
+.scroll-down{
+	left: 49%;
+}
+
+.projectDiv{
+	max-width: 42%;
+}
+
+.menu{
+	display: inline;
+	cursor: pointer;
+	color: grey;
+	font-size: 25px;
+}
+
+.menu:hover{
+	color: black;
+}
+
+.menu i{
+	margin-top: 5px;
+	position: fixed;
+	z-index: 1;
+}
+
+.menu i:hover{
+	color: black;
+}
+
+.navBar{
+	width: 0;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	background-color: #c2c2c2;
+	border-right: 2px solid #B1B7B1;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+	justify-content: center;
+	transition: 0.5s;
+	overflow-x: hidden;
+	z-index: 2;
+}
+.hidden{
+	width: 250;
+	/*display: none;*/
+}
+
+.show{
+	display: ""
+}
+/*.navItem{
+	padding: 5px 40px;
+	font-size: 18px;
+	font-family: 'Fredoka One', cursive;
+}
+*/
+/*.navContainer{
+	position: relative;
+}
+*/
+.closeMenu{
+	display: inline-block;
+    position: relative;
+    top: -6vh;
+    right: -190px;
+    color: black;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.closeMenu:hover{
+	color: black;
+}
+
+}
+
+@media screen and (max-width: 660px) {
+	.projectContainer{
+		justify-content: center;
+	}
+	.projectDiv{
+		max-width: 100%;
+	}
+	.closeMenu{
+		display: inline-block;
+	    position: relative;
+	    top: -6vh;
+	    right: -190px;
+	    color: black;
+	    z-index: 5;
+	}
+
+	.inputBox{
+		width: 100%;
+	}
+}
+
+.hidden{
+	width: 300px;
+}

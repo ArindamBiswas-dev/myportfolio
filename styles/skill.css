@@ -1,0 +1,153 @@
+.skillDiv{
+	border-radius: 19px;
+	background: #c2c2c2;
+	box-shadow:  6px 6px 14px #656565,
+             -6px -6px 14px #ffffff;
+    padding: 15px 15px;
+    font-size: 	16px;
+ 	font-family: 'Ubuntu', sans-serif;
+}
+
+.htmlContainer{
+	display: flex;
+	flex-direction: column;
+	margin: 8px 0px;
+}
+
+.skillHeader{
+	display: flex;
+	justify-content: space-between;
+}
+
+.skillHeader p{
+	font-weight: 600;
+	margin-bottom: 2px;
+}
+
+.loader{
+	height: 10px;
+	width: 100%;
+	border-radius: 30px;
+	background: #ffffff;
+	box-shadow: inset 5px 5px 30px #737373,
+            inset -5px -5px 30px #ffffff;
+}
+
+.htmlLoader{
+	background-color: #FF3D00;
+	border-radius: 30px;
+	width: 100%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.cssLoader{
+	background-color: #4D8BC0;
+	border-radius: 30px;
+	width: 70%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.javascriptLoader{
+	background-color: #F3CD35;
+	border-radius: 30px;
+	width: 70%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.reactJSLoader{
+	background-color: #35E6F2;
+	border-radius: 30px;
+	width: 60%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.nodeLoader{
+	background-color: #168E36;
+	border-radius: 30px;
+	width: 70%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+
+
+.javaLoader{
+	background-color: #7A1111;
+	border-radius: 30px;
+	width: 80%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.cLoader{
+	background-color: #AA8E8E;
+	border-radius: 30px;
+	width: 70%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.mongoDBLoader{
+	background-color: #4EDC2F;
+	border-radius: 30px;
+	width: 40%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.sqlLoader{
+	background-color: #A59015;
+	border-radius: 30px;
+	width: 80%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+.muiLoader{
+	background-color: #2B16A6;
+	border-radius: 30px;
+	width: 70%;
+	height: 100%;
+	animation-name: html;
+	animation-duration: 3s;
+}
+
+
+/*@keyframes html{
+	from{
+		width: 0%;
+	}
+}*/
+
+
+
+
+/*.contactDiv{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fn{
+	display: block;
+	max
+}*/
+
+
+
+
+
+
