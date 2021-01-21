@@ -1,7 +1,6 @@
 body{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 	background-color: #c2c2c2;
 }
 
@@ -300,6 +299,7 @@ body{
 
 .projectDescContainer{
 	height: 120px;
+	overflow: hidden;
 }
 
 .projectDesc{
@@ -376,11 +376,11 @@ body{
 
 }
 
-/*.inputBox #e1, #n1{
+.inputBox{
 	width: 100%;
 	max-width: 100%;
 }
-*/
+
 .smallText{
 	margin-left: 20px;
 	color: red;
@@ -407,6 +407,13 @@ body{
 .mainBodyDiv{
 	margin-left: 300;
 }
+
+@media screen and (max-width: 1200px) {
+	.projectDiv{
+		max-width: 42%;
+	}
+}
+
 @media screen and (max-width: 992px) {
 .navBar{
 	display: none;
@@ -424,7 +431,7 @@ body{
 
 #n1, #e1{
 	display: block;
-	width: 96%;
+	width: 100%;
 }
 
 .about .avaterDiv{
@@ -519,6 +526,9 @@ padding: 0px;
 }
 
 @media screen and (max-width: 660px) {
+	.avaterNameDiv{
+		padding-top: 5vh;
+	}
 	.projectContainer{
 		justify-content: center;
 	}
